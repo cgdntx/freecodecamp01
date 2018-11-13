@@ -2,13 +2,80 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>3D Printing Survey Form</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        
-        <script src="" async defer></script>
+        <form action="submit" id="survey-form">
+            <div class="grid-container">
+                <div class="grid-stretch">
+                    <h1 id="title">3D Printing Survey Form</h1>
+                    <p id="description">A short survey about 3D printing.</p>
+                </div>
+                <div class="grid-left">
+                    <label for="name" id="name-label">* Name:</label>
+                </div>
+                <div class="grid-right">
+                    <input type="text" id="name" class="text-box" placeholder="Your full name" required>
+                </div>
+                <div class="grid-left">
+                    <label for="email" id="email-label">* Email Address:</label>
+                </div>
+                <div class="grid-right">
+                    <input type="email" id="email" class="text-box" placeholder="address@example.com" required>
+                </div>
+                <div class="grid-left">
+                    <label for="number" id="number-label">* How many 3D printers do you own?</label>
+                </div>
+                <div class="grid-right">
+                    <input type="number" id="number" max="100" min="0" class="text-box" placeholder="1" required>
+                </div>
+                <div class="grid-left">
+                    <label for="dropdown" id="dropdown-label">What type of movement is your main printer?</label>
+                </div>
+                <div class="grid-right">
+                    <select name="dropdown" id="dropdown" class="text-box">
+                        <option value="cartesian">Cartesian</option>
+                        <option value="delta">Delta</option>
+                        <option value="corexy">CoreXY</option>
+                        <option value="ultimaker">UltiMaker</option>
+                    </select>
+                </div>
+                <div class="grid-left">
+                    <label id="radio-label">What is your primary purpose for 3D printing?</label>
+                </div>
+                <div class="grid-right">
+                    <label for="radio">Professional</label> 
+                    <input type="radio" name="radio" id="professional" value="professional">
+                    <label for="radio">Educational</label> 
+                    <input type="radio" name="radio" id="educational" value="educational">
+                    <label for="radio">Hobby</label> 
+                    <input type="radio" name="radio" id="hobby" value="hobby">
+                </div>
+                <div class="grid-left">
+                    <label for="checkbox" id="checkbox-label">Which of these filament types to you use regularly?</label>
+                </div>
+                <div class="grid-right">
+                    <input type="checkbox" name="pla" value="pla"> PLA <br>
+                    <input type="checkbox" name="pla" value="pla"> PETG <br>
+                    <input type="checkbox" name="pla" value="pla"> ABS <br>
+                    <input type="checkbox" name="pla" value="pla"> Nylon <br>
+                    <input type="checkbox" name="pla" value="pla"> Exotics <br>
+                </div>
+                <br>
+                <div class="grid-stretch">
+                    <p>Additional comments</p>
+                    <textarea id="textarea" class="text-box" maxlength="500"></textarea>
+                </div>
+                <br>
+                <div class="grid-stretch">
+                    <button id="submit" type="submit" class="submit-button">Submit</button>
+                    <p>Thank you for participating!</p>
+                </div>
+            </div>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
     </body>
 </html>
