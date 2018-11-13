@@ -1,3 +1,21 @@
-body {
-    background-color: white;
+#main {
+    max-width: 800px;
+    margin: auto;
+}
+#title {
+    text-align: center;
+}
+#img-div {
+    text-align: center;
+}
+#image {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    
+}
+#tribute-info {
+    display: block;
+    margin: auto;
 }
