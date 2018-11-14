@@ -1,0 +1,16 @@
+:root {
+    --bg1: lightgray;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--bg1);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
