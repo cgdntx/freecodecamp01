@@ -6,9 +6,46 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <style type="text/css">
+            @media screen and (max-width: 400px) {
+                #projects {
+                    display: block;
+                }
+                .project-tile {
+                    margin: 5px auto 5px auto;
+                }
+            }
+        </style>
     </head>
     <body>
-        
+        <nav id="navbar">
+            <a href="https://github.com/cgdntx" id="profile-link" target="_blank">GitHub Profile</a>
+            <a href="#projects" id="project-list">Project List</a>
+            <a href="https://www.freecodecamp.org/cgdntx" id="fcc-profile" target="_blank">Free Code Camp Profile</a>
+        </nav>
+        <section id="welcome-section">
+            <div class="welcome-left">
+                <h1>WELCOME!</h1>
+            </div>
+            <div class="welcome-right">
+                <div class="welcome-small">I'm</div>
+                <div class="welcome-small"><span class="uname">CGDNTX</span></div>
+            </div>
+        </section>
+        <section id="projects">
+            <a href="https://cgdntx.github.io/freecodecamp01/rwd_tribute_page/" class="project-link"><div class="project-title">
+                <h2>Tribute Page</h2>
+                <p>A tribute page to Yogi the Bear</p>
+            </div></a>
+            <a href="https://cgdntx.github.io/freecodecamp01/rwd_survey_form/" class="project-link"><div class="project-title">
+                <h2>Survey Form</h2>
+                <p>A quick 3D printing survey form</p>
+            </div></a>
+            <a href="https://cgdntx.github.io/freecodecamp01/rwd_technical_documentation/" class="project-link"><div class="project-title">
+                <h2>Technical Documentation</h2>
+                <p>Example of a technical documentation page</p>
+            </div></a>
+        </section>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
     </body>
 </html>
