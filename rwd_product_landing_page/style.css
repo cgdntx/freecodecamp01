@@ -1,16 +1,66 @@
 :root {
-    --bg1: lightgray;
-}
+    --primary-0: #943156; /* Main Primary color */
+    --primary-1: #E8AFC4; 
+    --primary-2: #C46B8C; 
+    --primary-3: #640C2D; 
+    --primary-4: #330013; 
+
+    --complement-0: #699A33; 	/* Main Complement color */
+    --complement-1: #D2EEB4; 
+    --complement-2: #9FCC6F; 
+    --complement-3: #3C670D; 
+    --complement-4: #1C3500; 
+    }
 
 body {
     margin: 0;
     padding: 0;
 }
 
+header {
+    background-color: var(--complement-2);
+}
+
 nav {
-    background-color: var(--bg1);
+    background-color: var(--primary-3);
+    color: var(--complement-1);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: auto;
+}
+
+section {
+    background-color: var(--complement-2)
+}
+.content {
+    max-width: 800px;
+    display: flex;
+    margin: auto;
+}
+
+.nav-link {
+    font-weight: bold;
+    display: block;
+    color: var(--complement-1);
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: var(--complement-2);
+}
+
+
+
+#form {
+    display: inline-flex;
+    justify-content: space-between;
+}
+#banner {
+    background-color: var(--complement-2);
+    height: 500px;
 }
