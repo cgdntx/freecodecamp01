@@ -5,7 +5,19 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <style type="text/css">
+            .content {
+                max-width: 800px;
+                display: flex;
+                margin: auto;
+            }
+            @media (max-width: 800px) {
+                .content {
+                    background-color: var(--primary-2);
+                }
+            }
+        </style>
     </head>
     <body>
         <header id="header">
@@ -17,12 +29,12 @@
                 </ul>
             </nav>
             <div id="banner" class="content">
-                <img src="" id="header-img" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Arizona.svg/1200px-Flag_of_Arizona.svg.png" id="header-img" alt="">
             </div>            
         </header>
         <section id="review">
             <div class="content">
-
+                <iframe id="video" src="https://www.youtube.com/embed/jYJ5MzEDeWE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
         </section>
         <section id="buy">

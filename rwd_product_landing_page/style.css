@@ -12,6 +12,8 @@
     --complement-4: #1C3500; 
     }
 
+
+
 body {
     margin: 0;
     padding: 0;
@@ -56,6 +58,12 @@ section {
 
 
 
+#header-img {
+    max-width: 800px;
+}
+#video {
+    width: 100%;
+}
 #form {
     display: inline-flex;
     justify-content: space-between;
@@ -64,3 +72,11 @@ section {
     background-color: var(--complement-2);
     height: 500px;
 }
+
+
+@media (max-width: 800px) {
+    .content {
+        background-color: var(--primary-2);
+    }
+}
+
